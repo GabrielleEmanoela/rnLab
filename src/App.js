@@ -3,11 +3,11 @@ import { View, StyleSheet } from 'react-native';
 import BiggerNumber from './components/BiggerNumber';
 import X, { Comp1, Comp2 } from './components/Multi';
 import Primeiro from './components/First_comp';
+import Random from './components/Random';
 
 export default () => (
   <View style={style.App}>
-    <BiggerNumber max="50" min="20" />
-    <BiggerNumber max="90" min="20" />
+    <Random max={1000} min={0} />
     {/*<Primeiro />
     <X />
     <Comp1 />
