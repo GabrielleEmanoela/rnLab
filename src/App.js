@@ -1,7 +1,7 @@
 import React from 'react'
-import {Text} from'react-native'
+import { Text, View } from 'react-native'
 
-function App() { 
-return <Text>  Primeirinho componente 😘</Text>
-}
-export default App
+import Primeiro from './components/Primeiro_comp'
+
+export default () => <Primeiro>
+</Primeiro>
