@@ -7,9 +7,9 @@ import Primeiro from './components/Primeiro_comp'
 export default () =>
 
     <View>
-        <Primeiro></Primeiro>
-        <X> </X>
-        <Comp1></Comp1>
-        <Comp2></Comp2>
+        <Primeiro />
+        <X />
+        <Comp1 />
+        <Comp2 />
     </View>
 
