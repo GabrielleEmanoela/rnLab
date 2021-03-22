@@ -5,12 +5,14 @@ import { View, StyleSheet } from 'react-native';
 //import Primeiro from './components/First_comp';
 //import Random from './components/Random';
 //import Title from './components/Title';
-import Button from './components/Button';
+//import Button from './components/Button';
+import Counter from './components/Counter';
 
 export default () => (
   <View style={style.App}>
-    <Button />
-    {/*<Title Principal=" Cadastro " Secundario="Tela de cadastro produto" />
+    <Counter init={400} />
+    {/* <Button />
+    <Title Principal=" Cadastro " Secundario="Tela de cadastro produto" />
     <Random max={1000} min={0} />
     <Primeiro />
     <X />
