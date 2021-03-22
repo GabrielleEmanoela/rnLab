@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
+import MainComponent from './components/IndirectCommunication/MainComponent';
 //import BiggerNumber from './components/BiggerNumber';
 //import X, { Comp1, Comp2 } from './components/Multi';
 //import Primeiro from './components/First_comp';
@@ -7,12 +8,13 @@ import { View, StyleSheet } from 'react-native';
 //import Title from './components/Title';
 //import Button from './components/Button';
 //import Counter from './components/Counter';
-import FatherComponent from './components/DirectCommunication/FatherComponent';
+//import FatherComponent from './components/DirectCommunication/FatherComponent';
 
 export default () => (
   <View style={style.App}>
-    <FatherComponent />
-    {/* <Counter init={400} />
+    <MainComponent />
+    {/*<FatherComponent />
+     <Counter init={400} />
     <Button />
     <Title Principal=" Cadastro " Secundario="Tela de cadastro produto" />
     <Random max={1000} min={0} />
