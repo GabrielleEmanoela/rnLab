@@ -4,7 +4,8 @@ import Style from './Sytle';
 
 export default (number) => {
   console.warn(number);
-  const verification = number.max - number.min + 1;
-  const total = parseInt(Math.random() * verification) + number.min;
+  const { min, max } = number;
+  const verification = max - min + 1;
+  const total = parseInt(Math.random() * verification) + min;
   return <Text style={Style.textStyle}>Select number {total}</Text>;
 };
