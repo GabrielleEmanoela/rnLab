@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
-import DiferenciarDispositivos from './components/DiferenciarDispositivos';
+import ConditionalRendering from './components/ConditionalRendering';
+import DiferenciarDispositivos from './components/DifferentiateDevice';
 import MainComponent from './components/IndirectCommunication/MainComponent';
 //import BiggerNumber from './components/BiggerNumber';
 //import X, { Comp1, Comp2 } from './components/Multi';
@@ -13,8 +14,9 @@ import MainComponent from './components/IndirectCommunication/MainComponent';
 
 export default () => (
   <View style={style.App}>
-    <DiferenciarDispositivos />
-    {/*<MainComponent />
+    <ConditionalRendering />
+    {/*  <DiferenciarDispositivos />
+  <MainComponent />
     <FatherComponent />
      <Counter init={400} />
     <Button />
