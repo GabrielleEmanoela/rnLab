@@ -9,7 +9,7 @@ export default ({ num = 0 }) => {
         <Text style={Style.textStyle}>Par</Text>
       ) : (
         <Text style={Style.textStyle}>Impar</Text>
-      )}{' '}
+      )}
     </View>
   );
 };

@@ -1,8 +1,12 @@
+import { version } from '@babel/core';
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
-import ConditionalRendering from './components/ConditionalRendering';
-import DiferenciarDispositivos from './components/DifferentiateDevice';
-import MainComponent from './components/IndirectCommunication/MainComponent';
+import { View, StyleSheet, SafeAreaView } from 'react-native';
+import Origin from './Relationship/Origin';
+//import ConditionalRendering from './components/ConditionalRendering';
+//import DiferenciarDispositivos from './components/DifferentiateDevice';
+//import MainComponent from './components/IndirectCommunication/MainComponent';
+import Version from './Version';
+
 //import BiggerNumber from './components/BiggerNumber';
 //import X, { Comp1, Comp2 } from './components/Multi';
 //import Primeiro from './components/First_comp';
@@ -13,9 +17,13 @@ import MainComponent from './components/IndirectCommunication/MainComponent';
 //import FatherComponent from './components/DirectCommunication/FatherComponent';
 
 export default () => (
-  <View style={style.App}>
-    <ConditionalRendering />
-    {/*  <DiferenciarDispositivos />
+  <SafeAreaView style={style.App}>
+    <Origin>
+      <Version nome="Start" sobrenome="Corre" />
+    </Origin>
+
+    {/*  <ConditionalRendering />
+    <DiferenciarDispositivos />
   <MainComponent />
     <FatherComponent />
      <Counter init={400} />
@@ -26,7 +34,7 @@ export default () => (
     <X />
     <Comp1 />
   <Comp2 / */}
-  </View>
+  </SafeAreaView>
 );
 const style = StyleSheet.create({
   App: {
