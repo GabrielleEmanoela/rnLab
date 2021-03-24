@@ -2,6 +2,7 @@ import { version } from '@babel/core';
 import React from 'react';
 import { View, StyleSheet, SafeAreaView } from 'react-native';
 import _if from './components/if';
+import ListProduct from './components/Products/ListProduct';
 import UserLogin from './components/UserLogin';
 //import Origin from './Relationship/Origin';
 //import ConditionalRendering from './components/ConditionalRendering';
@@ -20,8 +21,10 @@ import UserLogin from './components/UserLogin';
 
 export default () => (
   <SafeAreaView style={style.App}>
+    <ListProduct />
+    {/*  <
     <UserLogin usuario={{ nome: 'Gabi', email: 'biela.a' }} />
-    {/*   <Origin>
+      <Origin>
       <Version nome="Start" sobrenome="Corre" />
     </Origin>
 
@@ -36,7 +39,7 @@ export default () => (
     <Primeiro />
     <X />
     <Comp1 />
-  <Comp2 / */}
+<Comp2 / */}
   </SafeAreaView>
 );
 const style = StyleSheet.create({
