@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
+import DiferenciarDispositivos from './components/DiferenciarDispositivos';
 import MainComponent from './components/IndirectCommunication/MainComponent';
 //import BiggerNumber from './components/BiggerNumber';
 //import X, { Comp1, Comp2 } from './components/Multi';
@@ -12,8 +13,9 @@ import MainComponent from './components/IndirectCommunication/MainComponent';
 
 export default () => (
   <View style={style.App}>
-    <MainComponent />
-    {/*<FatherComponent />
+    <DiferenciarDispositivos />
+    {/*<MainComponent />
+    <FatherComponent />
      <Counter init={400} />
     <Button />
     <Title Principal=" Cadastro " Secundario="Tela de cadastro produto" />
