@@ -1,11 +1,13 @@
 import { version } from '@babel/core';
 import React from 'react';
 import { View, StyleSheet, SafeAreaView } from 'react-native';
-import Origin from './Relationship/Origin';
+import _if from './components/if';
+import UserLogin from './components/UserLogin';
+//import Origin from './Relationship/Origin';
 //import ConditionalRendering from './components/ConditionalRendering';
 //import DiferenciarDispositivos from './components/DifferentiateDevice';
 //import MainComponent from './components/IndirectCommunication/MainComponent';
-import Version from './Version';
+//import Version from './Version';
 
 //import BiggerNumber from './components/BiggerNumber';
 //import X, { Comp1, Comp2 } from './components/Multi';
@@ -18,11 +20,12 @@ import Version from './Version';
 
 export default () => (
   <SafeAreaView style={style.App}>
-    <Origin>
+    <UserLogin usuario={{ nome: 'Gabi', email: 'biela.a' }} />
+    {/*   <Origin>
       <Version nome="Start" sobrenome="Corre" />
     </Origin>
 
-    {/*  <ConditionalRendering />
+   <ConditionalRendering />
     <DiferenciarDispositivos />
   <MainComponent />
     <FatherComponent />
